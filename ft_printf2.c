@@ -38,7 +38,7 @@ void	ft_void(unsigned long int p, char *base, int *len)
 {
 	unsigned int	plen;
 
-	plen = ft_strlen(base);
+	plen = print_ft_strlen(base);
 	if (p >= plen)
 	{
 		(*len)++;
@@ -49,15 +49,15 @@ void	ft_void(unsigned long int p, char *base, int *len)
 
 void	ft_int(int n, int *len)
 {
-	*len += ft_lenint(n);
-	ft_putnbr(n);
+	*len += print_ft_lenint(n);
+	print_ft_putnbr(n);
 }
 
 void	ft_unsig(unsigned int n, char *base, int *len)
 {
 	unsigned int	nlen;
 
-	nlen = ft_strlen(base);
+	nlen = print_ft_strlen(base);
 	if (n >= nlen)
 	{
 		(*len)++;
