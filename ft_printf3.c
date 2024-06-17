@@ -14,15 +14,15 @@
 
 void	ft_float(int n, int *len)
 {
-	*len += print_ft_lenint(n);
-	print_ft_putnbr(n);
+	*len += ft_lenint_print(n);
+	ft_putnbr_print(n);
 }
 
 void	ft_hexminmay(unsigned int x, char *base, int *len)
 {
 	unsigned int	xlen;
 
-	xlen = print_ft_strlen(base);
+	xlen = ft_strlen_print(base);
 	if (x >= xlen)
 	{
 		(*len)++;

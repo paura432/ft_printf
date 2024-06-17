@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-size_t	print_ft_strlen(const char *s)
+size_t	ft_strlen_print(const char *s)
 {
 	size_t	i;
 
@@ -22,24 +22,24 @@ size_t	print_ft_strlen(const char *s)
 	return (i);
 }
 
-void	print_ft_putnbr(int n)
+void	ft_putnbr_print(int n)
 {
 	if (n == -2147483648)
 	{
 		write(1, "-", 1);
 		write(1, "2", 1);
-		print_ft_putnbr(147483648);
+		ft_putnbr_print(147483648);
 	}
 	else if (n < 0)
 	{
 		write(1, "-", 1);
 		n = n * -1;
-		print_ft_putnbr(n);
+		ft_putnbr_print(n);
 	}
 	else if (n > 9)
 	{
-		print_ft_putnbr(n / 10);
-		print_ft_putnbr(n % 10);
+		ft_putnbr_print(n / 10);
+		ft_putnbr_print(n % 10);
 	}
 	else
 	{
@@ -48,7 +48,7 @@ void	print_ft_putnbr(int n)
 	}
 }
 
-int	print_ft_lenint(int n)
+int	ft_lenint_print(int n)
 {
 	int	i;
 

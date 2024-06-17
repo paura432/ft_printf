@@ -29,8 +29,8 @@ void	ft_float(int n, int *len);
 void	ft_hexminmay(unsigned int x, char *base, int *len);
 void	ft_porcen(int *len);
 
-size_t	print_ft_strlen(const char *s);
-void	print_ft_putnbr(int n);
-int		print_ft_lenint(int n);
+size_t	ft_strlen_print(const char *s);
+void	ft_putnbr_print(int n);
+int		ft_lenint_print(int n);
 
 #endif
